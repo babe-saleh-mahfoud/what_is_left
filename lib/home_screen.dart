@@ -48,8 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
         color: Colors.black.withOpacity(0.8),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             RichText(
+              textAlign: TextAlign.start,
               text: TextSpan(
                 children: [
                   TextSpan(
@@ -75,6 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
               endIndent: screenWidth(context) * 0.2,
             ),
             RichText(
+              textAlign: TextAlign.start,
               text: TextSpan(
                 children: [
                   TextSpan(
