@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:what_is_left/constants.dart';
@@ -18,6 +19,14 @@ class _HomeScreenState extends State<HomeScreen> {
   int _hoursLeft = 0;
   int _minutesLeft = 0;
   int _secondsLeft = 0;
+  final assetsAudioPlayer = AssetsAudioPlayer();
+
+  void playSoundEffect() async {
+    assetsAudioPlayer.open(
+      Audio("assets/audios/song1.mp3"),
+    );
+  }
+
   @override
   void initState() {
     _yearsLeft = yearsLeft(widget.birthDate);
