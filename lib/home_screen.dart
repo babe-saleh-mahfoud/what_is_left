@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:what_is_left/constants.dart';
@@ -50,25 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            RichText(
-              textAlign: TextAlign.start,
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_yearsLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.15),
-                  ),
-                  TextSpan(
-                    text: ' years',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_yearsLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.15),
+            ),
+            Text(
+              ' years',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,
@@ -76,25 +68,18 @@ class _HomeScreenState extends State<HomeScreen> {
               indent: screenWidth(context) * 0.2,
               endIndent: screenWidth(context) * 0.2,
             ),
-            RichText(
-              textAlign: TextAlign.start,
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_monthsLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.1),
-                  ),
-                  TextSpan(
-                    text: ' months',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_monthsLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.1),
+            ),
+            Text(
+              ' months',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,
@@ -102,24 +87,18 @@ class _HomeScreenState extends State<HomeScreen> {
               indent: screenWidth(context) * 0.3,
               endIndent: screenWidth(context) * 0.3,
             ),
-            RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_daysLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.1),
-                  ),
-                  TextSpan(
-                    text: ' days',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_daysLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.1),
+            ),
+            Text(
+              ' days',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,
@@ -127,24 +106,18 @@ class _HomeScreenState extends State<HomeScreen> {
               indent: screenWidth(context) * 0.4,
               endIndent: screenWidth(context) * 0.4,
             ),
-            RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_hoursLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.1),
-                  ),
-                  TextSpan(
-                    text: ' hours',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_hoursLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.1),
+            ),
+            Text(
+              ' hours',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,
@@ -152,24 +125,18 @@ class _HomeScreenState extends State<HomeScreen> {
               indent: screenWidth(context) * 0.5,
               endIndent: screenWidth(context) * 0.5,
             ),
-            RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_minutesLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.1),
-                  ),
-                  TextSpan(
-                    text: ' minutes',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_minutesLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.1),
+            ),
+            Text(
+              ' minutes',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,
@@ -177,24 +144,18 @@ class _HomeScreenState extends State<HomeScreen> {
               indent: screenWidth(context) * 0.6,
               endIndent: screenWidth(context) * 0.6,
             ),
-            RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: '$_secondsLeft',
-                    style: kNumberTextStyle.copyWith(
-                        fontSize: screenWidth(context) * 0.1),
-                  ),
-                  TextSpan(
-                    text: ' seconds',
-                    style: kNumberTextStyle.copyWith(
-                        color: Colors.white.withOpacity(0.5),
-                        letterSpacing: 2,
-                        fontFamily: GoogleFonts.poppins().fontFamily,
-                        fontSize: screenWidth(context) * 0.08),
-                  ),
-                ],
-              ),
+            Text(
+              '$_secondsLeft',
+              style: kNumberTextStyle.copyWith(
+                  fontSize: screenWidth(context) * 0.1),
+            ),
+            Text(
+              ' seconds',
+              style: kNumberTextStyle.copyWith(
+                  color: Colors.white.withOpacity(0.5),
+                  letterSpacing: 2,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                  fontSize: screenWidth(context) * 0.04),
             ),
             Divider(
               color: Colors.grey,

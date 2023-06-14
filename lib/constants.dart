@@ -10,12 +10,12 @@ double screenHeight(BuildContext context) {
 }
 
 const kBacgroundColor = Color(0xFF1D1E33);
-const kAccentColor = Color(0xFFEB1555);
+const kAccentColor = Colors.yellowAccent;
 
 TextStyle kNumberTextStyle = TextStyle(
   fontSize: 50,
   fontWeight: FontWeight.bold,
-  fontFamily: GoogleFonts.permanentMarker().fontFamily,
+  fontFamily: GoogleFonts.lilitaOne().fontFamily,
   color: kAccentColor,
   fontStyle: FontStyle.italic,
 );
