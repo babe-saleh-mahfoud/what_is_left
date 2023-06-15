@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void playSoundEffect() async {
     assetsAudioPlayer.open(
-      Audio("assets/audios/song1.mp3"),
+      Audio("assets/audios/soundeffect.mp3"),
     );
   }
 
@@ -36,7 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
     _minutesLeft = minutesLeft(widget.birthDate);
     _secondsLeft = secondsLeft(widget.birthDate);
 
-    Timer.periodic(const Duration(seconds: 1), (timer) {
+    Timer.periodic(const Duration(seconds: 1), (timer) async {
+      playSoundEffect();
       setState(() {
         _yearsLeft = yearsLeft(widget.birthDate);
         _monthsLeft = monthsLeft(widget.birthDate);
